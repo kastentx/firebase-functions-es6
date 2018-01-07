@@ -1,0 +1,21 @@
+{
+  "name": "firebase-functions-es6",
+  "version": "1.0.0",
+  "description": "a starter project that allows for ES6 in development.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kastentx/firebase-functions-es6.git"
+  },
+  "author": "nick kasten",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kastentx/firebase-functions-es6/issues"
+  },
+  "homepage": "https://github.com/kastentx/firebase-functions-es6#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.16.0"
+  }
+}

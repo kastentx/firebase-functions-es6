@@ -8,8 +8,7 @@
     "deploy": "npm run package:functions && firebase deploy",
     "logs": "firebase functions:log",
     "package:functions":
-    "babel firebaseFunctions --out-dir . --copy-files --ignore firebaseFunctions/node_modules",
-    "compile-me": "npx babel index.js"
+    "babel ../firebaseFunctions --out-dir . --copy-files --ignore ../firebaseFunctions/node_modules"
   },
   "dependencies": {
     "firebase-admin": "~5.4.2",
