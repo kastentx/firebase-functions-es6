@@ -6,4 +6,4 @@ Install dependencies with `npm install`.
 
 Write your code in the **firebaseFunctions** directory.
 
-Run `npm run deploy` from the **functions** directory to compile and deploy!
+Run `npm run deploy` from the **project root** directory to compile and deploy!

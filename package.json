@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "a starter project that allows for ES6 in development.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "npm run package:functions && firebase deploy",
+    "logs": "firebase functions:log",
+    "package:functions": "babel firebaseFunctions --out-dir functions --copy-files --ignore firebaseFunctions/node_modules"
   },
   "repository": {
     "type": "git",
@@ -16,6 +21,9 @@
   },
   "homepage": "https://github.com/kastentx/firebase-functions-es6#readme",
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.36",
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
     "firebase-tools": "^3.16.0"
   }
 }
